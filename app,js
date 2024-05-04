@@ -1,0 +1,17 @@
+const express = require("express")
+const app = express()
+
+app.get("/",(req,res,next)=>{
+    console.log("hello world")
+    next()
+})
+
+app.get("/",(req,res,next)=>{
+    console.log("hey welcome")
+    next()
+})
+
+
+app.listen(3000 , () => {
+    console.log("server running at 3000")
+})
